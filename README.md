@@ -27,14 +27,13 @@ ent = { version = "0.1", features = ["derive"] }
 ```rust
 use ent::Ent;
 
-fn get_name<E: Ent>(e: Ent) -> &str {
-    e.as_str()
+fn get_name<E: Ent>(e: &E) -> Result<&str> {
+    e.get("name").unwrap().as_str()
 }
 
-fn main() {
-    let json: Value = serde_json::from_str(..).unwrap();
-    println!(get_name(json))
-}
+let v: serde_json::Value = serde_json::from_str(r#"{"name":"test"}"#).unwrap();
+let ref name = get_name(&v).unwrap();
+assert_eq!(name, &"test")
 ```
 
 ## License
