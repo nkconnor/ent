@@ -1,7 +1,7 @@
 use crate::{Ent, Error, Result};
 use pyo3::conversion::FromPyObject;
-use pyo3::types::{PyBool, PyDict, PyFloat, PyInt, PyString};
-use pyo3::{PyObject, Python};
+use pyo3::types::PyDict;
+use pyo3::PyObject;
 
 
 impl Ent for PyObject {
