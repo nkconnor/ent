@@ -1,0 +1,24 @@
+[package]
+name = "ent"
+version = "0.0.1"
+authors = ["nconnor <nicholas.k.connor@gmail.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+description = "Abstract object entity for JSON, PyDict, & others"
+repository = "https://github.com/nkconnor/ent"
+documentation = "https://docs.rs/ent"
+readme = "crates-io.md"
+
+[features]
+# extension-module = ["pyo3/extension-module"]
+# default = ["extension-module"]
+
+default = []
+
+python = ["pyo3"]
+json   = ["serde_json"]
+
+[dependencies]
+
+serde_json = { version="1", optional=true }
+pyo3 = {git="https://github.com/davidhewitt/pyo3.git", branch="rename-pyobject", optional=true }
