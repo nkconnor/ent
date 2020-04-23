@@ -7,7 +7,7 @@ license = "MIT OR Apache-2.0"
 description = "Abstract object entity for JSON, PyDict, & others"
 repository = "https://github.com/nkconnor/ent"
 documentation = "https://docs.rs/ent"
-readme = "crates-io.md"
+readme = "README.md"
 
 [features]
 # extension-module = ["pyo3/extension-module"]
