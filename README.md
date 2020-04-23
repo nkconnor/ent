@@ -1,7 +1,8 @@
-# Ent &emsp; [![Build Status]] [![Latest Version]][crates.io]
+# Ent &emsp; ![Build] ![Crate]
 
-[Build Status]: https://github.com/nkconnor/octane/workflows/build/badge.svg
-[crates.io]: https://crates.io/crates/ent
+[Build]: https://github.com/nkconnor/ent/workflows/build/badge.svg
+[Crate]: https://img.shields.io/crates/v/ent
+
 
 **_Ent is an abstract object library_**. Using Rust's [monomorphization](https://doc.rust-lang.org/book/ch10-01-syntax.html),
 you can write zero cost interfaces across multiple object types including [JSON](https://github.com/serde-rs/json) 
