@@ -10,7 +10,7 @@ and [Python dictionaries](https://pyo3.rs). If you are interested in contributin
 any help including additional object implementations.
 
 _Warning: this is in early development and there may be a more generic approach to this problem that utilizes e.g. `serde`'s Visitor in order
-to apply to a large number of object-like formats._ 
+to apply to a large number of object-like formats. See also [`dict_derive` from the Pyo3 ecosystem](https://github.com/gperinazzo/dict-derive)._ 
 
 ## Getting Started
 
