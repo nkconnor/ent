@@ -1,10 +1,9 @@
 use crate::{Ent, Error, Result};
 use pyo3::conversion::FromPyObject;
 use pyo3::types::PyDict;
-use pyo3::PyObject;
+use pyo3::PyAny;
 
-
-impl Ent for PyObject {
+impl Ent for PyAny {
     fn get(&self, key: &str) -> Result<&Self> {
         self.downcast::<PyDict>()
             .map_err(|_| Error::DataTypeMismatch)?
