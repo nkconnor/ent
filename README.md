@@ -9,7 +9,7 @@ you can write zero cost interfaces across multiple object types including [JSON]
 and [Python dictionaries](https://pyo3.rs). If you are interested in contributing to Ent, please do! We would welcome 
 any help including additional object implementations.
 
-**Warning: Ent is in early development and depends on Rust nightly!** 
+_Warning: Ent is in early development. There may be a more generic approach to this problem that utilizes `serde`'s Visitor._ 
 
 ## Getting Started
 
@@ -19,7 +19,7 @@ any help including additional object implementations.
 # Specify supported implementations using feature keys:
 #  - python
 #  - json
-ent = { version = "0.1", features = ["derive"] }
+ent = { version = "0.1", features = ["python"] }
 ```
 
 ## Examples
