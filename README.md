@@ -9,7 +9,8 @@ you can write zero cost interfaces across multiple object types including [JSON]
 and [Python dictionaries](https://pyo3.rs). If you are interested in contributing to Ent, please do! We would welcome 
 any help including additional object implementations.
 
-_Warning: Ent is in early development. There may be a more generic approach to this problem that utilizes `serde`'s Visitor._ 
+_Warning: this is in early development and there may be a more generic approach to this problem that utilizes e.g. `serde`'s Visitor in order
+to apply to a large number of object-like formats._ 
 
 ## Getting Started
 
